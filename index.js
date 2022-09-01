@@ -5,7 +5,9 @@ const app = express()
 const PORT = 4500
 
 app.get("/", (req, res) => {
-    res.send("This is the Home Page!")
+    // res.send("This is the Home Page!")
+    // SEND FILE
+    res.sendFile(__dirname+"/views/index.html")
     
 })
 
